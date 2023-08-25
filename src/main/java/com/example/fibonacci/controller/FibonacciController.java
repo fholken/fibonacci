@@ -40,7 +40,7 @@ public class FibonacciController {
         }
 
         List<Long> fibonacciNumbers = fibonacciService.generateFibonacciSeries();
-        List<String> recipientEmails = Arrays.asList("mauro.g.rivera@gmail.com");
+        List<String> recipientEmails = Arrays.asList("mauro.g.rivera@gmail.com", "didier.correa@proteccion.com.co", "correalondon@gmail.com");
 
         try {
             emailService.sendFibonacciEmail(recipientEmails, fibonacciNumbers);
